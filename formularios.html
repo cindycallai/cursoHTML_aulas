@@ -6,8 +6,8 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <form name="signup" method="POST" action="#"> <!-- GET vai pelo endereço, POST é mais seguro-->
-        <p>Nome: <input type="text" name="name"></p>
+    <form name="signup" autocomplete="on" onsubmit="alert('Enviei o formulário')" target="_blank" method="POST" action="#"> <!-- GET vai pelo endereço, POST é mais seguro, encapsula as informações-->
+        <p>Nome: <input type="text" name="name"></p> 
         <p>Idade: <input type="number" name="age"></p>
         <p>Senha: <input type="password" name="password"></p>
         <p><button type="submit">Enviar</button></p>
