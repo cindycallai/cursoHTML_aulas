@@ -11,6 +11,24 @@
         <p>Idade: <input type="number" name="age"></p>
         <p>Senha: <input type="password" name="password"></p>
         <p><button type="submit">Enviar</button></p>
+
+        <!-- Tipos de Input-->
+        <label>Texto: </label><input type="text" /><br>
+        <label>Número: </label><input type="number" min="0" step="5" max="99"/><br>
+        <label>Range: </label><input type="range" min="0" max="100" value="10"/><br>
+        <label>Color: </label><input type="color"/><br>
+        <label>E-mail: </label><input type="email" type="submit" /><br>
+        <label>URL: </label><input type="url"/><br>
+        <label>Date: </label><input type="date"/><br> 
+        <label>Week: </label><input type="week"/><br> <!-- Não funciona no firefox-->
+        <label>Month: </label><input type="month"/><br> <!-- Não funciona no firefox-->
+        <label>CheckBox: </label><input type="checkbox"/><br> <label>CheckBox</label><input type="checkbox"/><br> <!-- permite selecionar os dois-->
+        <label>Radio: </label><input type="radio" name="aceita"/><br> <label>Radio</label><input type="radio" name="aceita"/><br> <!-- permite selecionar apenas 1-->
+        <label>File: </label><input type="file" multiple/><br> 
+        <label>Hidden: </label><input type="hidden"/><br> <!-- Campo invisível ao cliente, apenas em segundo plano-->
+        <label>Search: </label><input type="search"/><br> <!-- Não funciona no firefox-->
+        <label>Button: </label><input type="button" value="Enviar" /><br> <button type="button">Enviar</button>
+
     </form>
 </body>
 </html>
