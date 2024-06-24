@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro</title>
+    <title>Formulários e Botões</title>
 </head>
 <body>
     <form name="signup" autocomplete="on" onsubmit="alert('Enviei o formulário')" target="_blank" method="POST" action="#"> <!-- GET vai pelo endereço, POST é mais seguro, encapsula as informações-->
@@ -29,6 +29,56 @@
         <label>Search: </label><input type="search"/><br> <!-- Não funciona no firefox-->
         <label>Button: </label><input type="button" value="Enviar" /><br> <button type="button">Enviar</button>
 
+
+    </form>
+    <form method="post">
+        <!-- CheckBox e Radio-->
+        <h2>Você selecionou: Pizza de Calabresa</h2>
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br><!-- o colchete[] indica ao servidor que é uma lista-->
+        <input type="checkbox" name="opcional[]" value="calabresa" disable> + calabresa <br> <!-- disable: desabilita a opção-->
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br>
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim"> Sim <br>
+        <input type="radio" name="borda" value="não"> Não <br>
+        <p>Bebida?</p>
+        <input type="radio" name="bebida" value="suco"> Suco <br>
+        <input type="radio" name="bebida" value="refrigerante"> Refrigerante <br>
+        <input type="radio" name="bebida" value="agua"> Água <br>
+        <input type="radio" name="bebida" value="nenhum"> Nenhum <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <form onsubmit="" method="get">
+        <!--Button e seus tipos-->
+        <label>Nome: </label><input type="text" name="name"/><br>
+        <label>Idade: </label><input type="number" name="age"/><br>
+        <label>Password: </label><input type="password" name="password"/><br>
+
+        <button type="button" onclick="alert('Enviado')">Clicável</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+    <form method="get">
+        <!--Select e seus tipos-->
+        <label>Nome: </label><input type="text" name="name"/><br>
+        <label>Idade: </label><input type="number" name="age"/><br>
+        <label>Cargo: </label>
+        <select name="role" multiple> <!--multiple: permite selecionar vários itens-->
+            <option value="">Selecione Cargo</option>
+            <option selected value="administrativo">Administrativo</option> <!--Selected: já vem selecionado-->
+            <option value="ti">Gerente de TI</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select> <br>
+        <label>Password: </label><input type="password" name="password"/><br>
+    </form>
+    <form method="get">
+        <!--Tag Textarea-->
+        <label>Mensagem</label>
+        <textarea rows="10" cols="50" name="text"></textarea>
     </form>
 </body>
 </html>
