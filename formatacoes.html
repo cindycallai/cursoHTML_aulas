@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formatações de Textos</title>
 </head>
 <body>
-    
+    <i>Programe seu futuro global agora! </i><br> <!-- Italico-->
+    <b>Programe seu futuro global agora!</b><br> <!-- Negrito-->
+    <u>Programe seu futuro global agora!</u><br> <!-- Sublinhado-->
+    <mark>Programe seu futuro global agora!</mark><br> <!-- marca texto-->
+    Programe<sup>*</sup> seu futuro global agora!<br> <!-- eleva no texto-->
+    Programe<sub>*</sub> seu futuro global agora!<br> <!-- rebaixa no texto-->
+    <blockquote><i>Programe seu futuro global agora!</i></blockquote><br> <!-- citação -->
+
+    <!-- Diferença entre as tags b e Strong-->  
+    <b>Programe seu futuro global agora!</b><br> <!-- Negrito apenas-->
+    <strong>Programe seu futuro global agora!</strong><br> <!-- Negrito com destaque no texto, utilizado para acessibilidade-->
+
+    <!-- Tag font-->
+    <font color="red" face="'Trebuchet MS', Arial, Tahoma">Programe seu futuro global agora!</font><br>
+
+    <!-- Div e Span-->
+    <!-- Utilizadas para estruturar as páginas, por não terem peso semântico-->
+    <div id="menu-lateral">
+        <div id="links">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p>Dio<div>.</div>me</p> <!-- Div é display block, ocupa a página toda-->
+    <p><span>Dio.me</span></p> <!-- span não é display block, não ocupa a página toda-->
+    <style>
+        span{
+            color:red;
+            font-weight: bond;
+        }
+    </style> 
+
 </body>
 </html>
