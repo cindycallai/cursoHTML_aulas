@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+    <style>
+        table{
+            border: solid 1px black;
+            -webkit-box-shadow: 5px 5px 8px 6px #45FFCE; 
+            box-shadow: 5px 5px 8px 6px #45FFCE;
+        }
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+        table tfoot td{
+            background-color: lightgray;
+        }
+        table tbody tr:hover td{
+            background-color: grey;
+            cursor: pointer;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <table summary="Tabela de idades da turma A" width="250" cellspacing="5" cellpadding="0" align="center">
+        <caption>Tabela de idades da turma A</caption> <!-- Descrição da tabela-->
+        <thead> <!-- Corpo do cabeçalho-->
+            <tr> 
+                <th colspan="2">Minha Tabela</th> <!-- colspan= mescla linhas-->
+            </tr> 
+            <tr> <!-- Linhas-->
+                <th title="Nome Completo">Nome</th> <!-- Cabeçalho da tabela-->
+                <th>Idade</th>
+            </tr> 
+        </thead>
+        <tbody> <!-- Corpo da tabela-->
+            <tr id="1">
+                <td>Cindy</td><!-- Colunas-->
+                <td>35</td>
+            </tr>
+            <tr id="2">
+                <td>Maria</td>
+                <td>34</td>
+            </tr>
+            <tr id="3">
+                <td>João</td>
+                <td>32</td>
+            </tr>
+            <tr id="4">
+                <td>Walter</td>
+                <td>24</td>
+            </tr>
+            <tr id="5">
+                <td>Manoel</td>
+                <td>28</td>
+            </tr>
+            <tr id="6">
+                <td>Michele</td>
+                <td>26</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- Corpo do rodapé-->
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
